@@ -23,6 +23,7 @@ namespace AutoUpdater
         string exeDir = null;
         string localDir = null;
         string productName = null;
+        string productNameOld = null;
         string backupFileName = null;
         string SVRver = null;
         string com_code = null;
@@ -171,7 +172,7 @@ namespace AutoUpdater
                 foreach (string pn in sl)
                 {
                     string pc = wi.get_ProductInfo(pn, "ProductName");
-                    if (pc.Equals(productName))
+                    if (pc.Equals(productName) || pc.Equals(productNameOld))
                     {
                         pro = new Process();
                         pro.StartInfo.FileName = "msiexec.exe";
