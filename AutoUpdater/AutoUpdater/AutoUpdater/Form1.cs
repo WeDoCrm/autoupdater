@@ -17,8 +17,8 @@ namespace AutoUpdater
     public partial class Form1 : Form
     {
         string FtpHost_uri = null;
-        string ftpPass = null;
-        string ftpid = null;
+        string ftpPass = "eclues!@";
+        string ftpid = "eclues";
         string downfilename = null;
         string exeDir = null;
         string localDir = null;
@@ -271,13 +271,13 @@ namespace AutoUpdater
                     {
                         if (node.Attributes["key"].Value.Equals("FtpPass"))
                         {
-                            ftpPass = node.Attributes["value"].Value;
-                            logFileWrite("ftpPass : " + ftpPass);
+                            //ftpPass = node.Attributes["value"].Value;
+                            //logFileWrite("ftpPass : " + ftpPass);
                         }
                         else if (node.Attributes["key"].Value.Equals("FtpUserName"))
                         {
-                            ftpid = node.Attributes["value"].Value;
-                            logFileWrite("ftp_username : " + ftpid);
+                            //ftpid = node.Attributes["value"].Value;
+                            //logFileWrite("ftp_username : " + ftpid);
                         }
 
                         else if (node.Attributes["key"].Value.Equals("FtpHost"))

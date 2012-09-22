@@ -23,7 +23,7 @@ namespace AutoUpdater
         string exeDir = null;
         string localDir = null;
         string productName = null;
-        string productNameOld = null;
+        string productNameOld = "WD_Server";
         string backupFileName = null;
         string SVRver = null;
         string com_code = null;
