@@ -49,7 +49,7 @@
   <ItemGroup>
     <Reference Include="Interop.WindowsInstaller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\AutoUpdater\AutoUpdater\AutoUpdater\bin\Debug\Interop.WindowsInstaller.dll</HintPath>
+      <HintPath>.\Interop.WindowsInstaller.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
